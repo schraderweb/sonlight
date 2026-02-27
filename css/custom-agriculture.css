@@ -1,0 +1,65 @@
+:root {
+  --primary-color-1:#67b800;
+  --primary-color-1-rgb:103, 184, 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a.btn-custom,
+input.btn-custom{
+  color:#ffffff;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-radius:30px;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
+  letter-spacing: 0;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Instrument Sans";
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color:var(--secondary-color);
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+body{
+  font-family: "Manrope";
+  font-size: 16px;
+}
+
+header #mainmenu a{
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+
+header.header-s2 .d-menu-wrap{
+  border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;  
+}
+
+.carousel-indicators{
+  margin-bottom: 70px;
+}
+
+h1.page-title{
+  font-size: 96px;
+  line-height: 1em;
+}
+
+h2.slide-title{
+  margin-bottom: 0;
+  font-size: 120px;
+}

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Inter";
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+body{
+	font-family: "Inter";
+}
+
+h1{
+	text-align: left;
+	letter-spacing: 0;
+	font-size: 60px;
+	text-transform: none;
+	letter-spacing: -2px;
+}
+
+h2{
+	letter-spacing: -1.15px;
+}
+
+#mainmenu,
+#mainmenu li a{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+#mainmenu > li > a{
+	font-weight: 600;
+}
+
+#logo .logo{
+	max-height: 46px;
+	max-width: 230px;
+	width: auto;
+	display: block;
+}
+
+#logo .logo-dark{
+	display: inline-block;
+}
+
+#logo .logo-light{
+	display: none;
+}
+
+header.header-light.transparent:not(.smaller):not(.header-mobile) #logo .logo-dark{
+	display: none;
+}
+
+header.header-light.transparent:not(.smaller):not(.header-mobile) #logo .logo-light{
+	display: inline-block;
+}
+
+#logo a{
+	line-height: 0;
+}
+
+.logo-small{
+	max-width: 280px;
+	height: auto;
+}
+
+.de_count.ultra-big{
+	padding: 0;
+}
+
+.de_count.ultra-big h3{
+	letter-spacing: -10px;
+	margin-bottom: 0;
+}
+
+.de_count.ultra-big span{
+	letter-spacing: 0;
+	font-size: 16px;
+}
+
+.de_phone-simple .d-num{
+	color: #000000;
+	letter-spacing: -1.1px;
+}
+
+a.btn-custom,
+a.btn-custom:hover{
+	letter-spacing: 0;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+footer{
+	font-size: 14px;
+}
+
+footer .widget ul li{
+	padding: 2px 0;
+}
+
+footer address span{
+	padding: 2px 0;
+}
+
+footer address span strong{
+	color: #404040;
+}
+
+.page-hero-panel{
+	background: rgba(0, 0, 0, 0.62);
+	border-radius: 4px;
+}
+
+.page-hero-panel h1,
+.page-hero-panel p{
+	color: #ffffff !important;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+.hero-dark-panel{
+	background: rgba(0, 0, 0, 0.74);
+}
+
+.hero-dark-panel h1,
+.hero-dark-panel p{
+	color: #ffffff !important;
+	text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+}
+
+#section-hero h1,
+#section-hero p{
+	text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (min-width: 993px){
+	header.header-light.transparent:not(.smaller):not(.header-mobile) #mainmenu > li > a{
+		color: #f3f6fb !important;
+	}
+
+	header.header-light.transparent:not(.smaller):not(.header-mobile) .de_phone-simple .d-num{
+		color: #f3f6fb;
+	}
+
+	header.header-light.transparent:not(.smaller):not(.header-mobile) .de_phone-simple .id-color{
+		color: #ffd15b !important;
+	}
+
+	header.header-light.transparent:not(.smaller):not(.header-mobile) #menu-btn:before{
+		color: #f3f6fb !important;
+	}
+}
+
+.review-cta h2{
+	color: #ffffff;
+}
+
+.review-buttons{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 18px;
+}
+
+.review-buttons .btn-line{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	min-width: 230px;
+	height: 48px;
+	line-height: 1;
+	padding: 0 22px;
+	vertical-align: middle;
+}
+
+.review-buttons .btn-line::after{
+	content: none !important;
+	display: none !important;
+}
+
+.review-buttons .btn-line i{
+	display: inline-flex;
+	align-items: center;
+	line-height: 1;
+	margin-left: 0;
+}
+
+.service-map-embed{
+	position: relative;
+	width: 100%;
+	padding-top: 56%;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+	overflow: hidden;
+	background: #0f0f0f;
+}
+
+.service-area-map{
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.service-area-map .leaflet-control-attribution{
+	font-size: 11px;
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.82);
+}
+
+.service-area-map .leaflet-popup-content-wrapper,
+.service-area-map .leaflet-popup-tip{
+	background: #1a1a1a;
+	color: #f2f2f2;
+}
+
+@media only screen and (max-width: 767px){
+	#logo .logo{
+		max-height: 38px;
+		max-width: 190px;
+	}
+
+	.review-buttons .btn-line{
+		min-width: 200px;
+	}
+
+	.service-map-embed{
+		padding-top: 70%;
+	}
+}
