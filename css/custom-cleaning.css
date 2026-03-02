@@ -62,6 +62,10 @@ header.header-light.transparent:not(.smaller):not(.header-mobile) #logo .logo-li
 	line-height: 0;
 }
 
+.mobile-call-link{
+	display: none;
+}
+
 .logo-small{
 	max-width: 280px;
 	height: auto;
@@ -191,12 +195,34 @@ footer address span strong{
 	margin-left: 0;
 }
 
+.service-map-section{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.service-map-section .container{
+	width: 100%;
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.service-map-section .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.service-map-section [class*="col-"]{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .service-map-embed{
 	position: relative;
 	width: 100%;
-	padding-top: 56%;
-	border: 2px solid rgba(255, 255, 255, 0.2);
-	border-radius: 4px;
+	padding-top: 24%;
+	border: 0;
+	border-radius: 0;
 	overflow: hidden;
 	background: #0f0f0f;
 }
@@ -276,6 +302,35 @@ footer address span strong{
 	border-color: #135dbe;
 }
 
+@media only screen and (max-width: 992px){
+	.mobile-call-link{
+		display: inline-flex;
+		float: right;
+		align-items: center;
+		gap: 6px;
+		margin: 3px 12px 0 0;
+		padding: 7px 12px;
+		border-radius: 999px;
+		background: #ffc527;
+		color: #1f1f1f;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	.mobile-call-link i{
+		font-size: 13px;
+	}
+
+	.mobile-call-link:hover,
+	.mobile-call-link:focus{
+		background: #ffd75a;
+		color: #171717;
+	}
+}
+
 @media only screen and (max-width: 767px){
 	#logo .logo{
 		max-height: 38px;
@@ -287,7 +342,7 @@ footer address span strong{
 	}
 
 	.service-map-embed{
-		padding-top: 70%;
+		padding-top: 56%;
 	}
 
 	.see-reviews-focus{

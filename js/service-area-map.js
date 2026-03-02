@@ -26,6 +26,13 @@
     { name: "Torch Lake", lat: 44.9370, lng: -85.3000 }
   ];
 
+  var business = {
+    name: "Sonlight Services Inc",
+    lat: 44.7631,
+    lng: -85.6206,
+    googleUrl: "https://www.google.com/search?q=Sonlight+Services+Inc"
+  };
+
   function cross(o, a, b) {
     return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
   }
@@ -74,16 +81,6 @@
     var hullInput = [];
     cities.forEach(function (city) {
       hullInput.push([city.lng, city.lat]);
-      L.circleMarker([city.lat, city.lng], {
-        radius: 5,
-        color: "#1f1f1f",
-        weight: 1,
-        fillColor: "#fff6d1",
-        fillOpacity: 1
-      }).addTo(map).bindTooltip(city.name, {
-        direction: "top",
-        offset: [0, -6]
-      });
     });
 
     var hull = convexHull(hullInput).map(function (point) {
@@ -96,6 +93,14 @@
       fillColor: "#fab702",
       fillOpacity: 0.2
     }).addTo(map);
+
+    L.marker([business.lat, business.lng])
+      .addTo(map)
+      .bindPopup(
+        '<strong>' + business.name + '</strong><br><a href="' +
+          business.googleUrl +
+          '" target="_blank" rel="noopener">View on Google</a>'
+      );
 
     outline.bindPopup("Approximate Sonlight Services coverage outline.");
     map.fitBounds(outline.getBounds().pad(0.08));
