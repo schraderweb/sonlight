@@ -220,6 +220,62 @@ footer address span strong{
 	color: #f2f2f2;
 }
 
+.see-reviews-focus{
+	margin-top: 20px;
+	margin-bottom: 14px;
+	font-size: 34px;
+	line-height: 1.15;
+	color: #ffffff;
+}
+
+.see-reviews-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 14px;
+}
+
+.review-brand-link{
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 24px;
+	border-radius: 6px;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	border: 2px solid transparent;
+}
+
+.review-brand-link i{
+	font-size: 26px;
+}
+
+.review-brand-link.google{
+	background: #ffffff;
+	color: #4285f4;
+	border-color: #4285f4;
+}
+
+.review-brand-link.google:hover{
+	background: #f3f8ff;
+	color: #3367d6;
+	border-color: #3367d6;
+}
+
+.review-brand-link.facebook{
+	background: #1877f2;
+	color: #ffffff;
+	border-color: #1877f2;
+}
+
+.review-brand-link.facebook:hover{
+	background: #135dbe;
+	color: #ffffff;
+	border-color: #135dbe;
+}
+
 @media only screen and (max-width: 767px){
 	#logo .logo{
 		max-height: 38px;
@@ -232,5 +288,18 @@ footer address span strong{
 
 	.service-map-embed{
 		padding-top: 70%;
+	}
+
+	.see-reviews-focus{
+		font-size: 24px;
+	}
+
+	.review-brand-link{
+		font-size: 22px;
+		padding: 10px 18px;
+	}
+
+	.review-brand-link i{
+		font-size: 20px;
 	}
 }
